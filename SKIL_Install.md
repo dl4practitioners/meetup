@@ -1,6 +1,6 @@
 
 
-SKILのインストール、起動について
+### SKILのインストール、起動について
 
 Skymindインテリジェンスレイヤ（SKIL)のコミュニティ版は無償です。
 
@@ -29,19 +29,24 @@ HWの最小構成
   - SKILの構成を設定するために以下でYumレポジトリ設定を作成
     （nanoに限らずご自分でお使いのテキストエディタで作成してください）
 、
-'''sudo nano /etc/yum.repos.d/skymind.repo
+'''
+sudo nano /etc/yum.repos.d/skymind.repo
+'''
 
   - skymind.repoに入力する内容
 
+'''
 [Skymind]
 name=Skymind Repository
 baseurl=https://nexus-ci.skymind.io/repository/rpms/centos/7/latest/os/x86_64
 gpgcheck=0
-
+'''
 1. SKILのインストール
   コマンドラインから以下のコマンドを入力することでSKILがインストールされます。
 
-'''sudo yum install -y skil-server-cpu-spark-1.6-hadoop-2.7.x86_64 skil-server-spark-1.6-hadoop-2.7.x86_64 skil-server-interpreter.x86_64 skil-server-static-miniconda-python-2.x86_64
+'''
+sudo yum install -y skil-server-cpu-spark-1.6-hadoop-2.7.x86_64 skil-server-spark-1.6-hadoop-2.7.x86_64 skil-server-interpreter.x86_64 skil-server-static-miniconda-python-2.x86_64
+'''
 
 インストールが完了するために5分から20分かかりますので、我慢してください。
 
@@ -49,13 +54,17 @@ gpgcheck=0
 
   SKILを開始するのにコマンドラインから以下のコマンドを入力してください。
 
-'''sudo systemctl daemon-reload
-'''sudo systemctl enable skil
-'''sudo systemctl start skil
+'''
+sudo systemctl daemon-reload
+sudo systemctl enable skil
+sudo systemctl start skil
+'''
 
 SKILが立ち上がったら以下でブラウザを開いてください。
 
-'''http://localhost:9008/
+'''
+http://localhost:9008/
+'''
 
 初回の立ち上げではさまざまな環境設定が行われるため、立ち上げに5分〜10分
 かかるのに注意してください。（2回目以降はずっと早く立ち上がります。）
@@ -63,8 +72,9 @@ SKILが立ち上がったら以下でブラウザを開いてください。
 1. SKILを終了する方法
   コマンドラインから以下のコマンドを入力してください。
 
-'''sudo systemctl stop skil
-
+'''
+sudo systemctl stop skil
+'''
 
 "admin"ユーザにパスワードを追加します。
 
