@@ -40,6 +40,7 @@ name=Skymind Repository
 baseurl=https://nexus-ci.skymind.io/repository/rpms/centos/7/latest/os/x86_64
 gpgcheck=0
 ```
+
 1. SKILのインストール
   コマンドラインから以下のコマンドを入力することでSKILがインストールされます。
 
