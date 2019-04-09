@@ -1,5 +1,3 @@
-
-
 ### SKILのインストール、起動について
 
 Skymindインテリジェンスレイヤ（SKIL)のコミュニティ版は無償です。
@@ -17,10 +15,11 @@ SKILはディープラーニングのプロジェクトで、プロトタイプ�
   - 学習済みモデルのモデル管理サーバ（SKIL model Server)への展開
 
 HWの最小構成
-  CPU: 4コアでAVX命令セットがサポートされたもの
-  メモリ： 16 GB （サンプルを動かすだけでしたら8GBでも大丈夫）
-  ネットワーク： 1Gps
-  空きディスク空間：  50GB以上（サンプルを動かすだけでしたら25GBくらいでも大丈夫）
+
+  CPU: 4コアでAVX命令セットがサポートされたもの<br>
+  メモリ： 16 GB （サンプルを動かすだけでしたら8GBでも大丈夫）<br>
+  ネットワーク： 1Gps<br>
+  空きディスク空間：  50GB以上（サンプルを動かすだけでしたら25GBくらいでも大丈夫）<br>
 
 1. SKILインストール前の事前準備
   <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Linux">Git</a>と<a href="https://maven.apache.org/install.html">Appache Maven</a>のインストールが必要です。事前にご準備願います。
@@ -82,11 +81,11 @@ sudo systemctl stop skil
 
 1. 次回以降のSKILの立ち上げ方法
 
-・SKILを開始する方法   （sudo systemctl start skil）
-・SKIL用のブラウザ立ち上げ （http://localhost:9008/）
-・ブラウザ内で以下を入力
-   USERNAME： admin
-   PASSWORD： ご自身で設定したパスワード
-・SKILを終了する方法    (sudo systemcl stop skil)
+・SKILを開始する方法   （sudo systemctl start skil）<br>
+・SKIL用のブラウザ立ち上げ （http://localhost:9008/）<br>
+・ブラウザ内で以下を入力<br>
+   USERNAME： admin<br>
+   PASSWORD： ご自身で設定したパスワード<br>
+・SKILを終了する方法    (sudo systemcl stop skil)<br>
 
 以上
